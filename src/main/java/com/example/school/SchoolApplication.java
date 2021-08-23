@@ -3,12 +3,6 @@ package com.example.school;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@Configuration
-@ComponentScan(basePackages = "com.example.*")
-public class ApplicationConfig{
-	
-}
-
 @SpringBootApplication
 public class SchoolApplication {
 
