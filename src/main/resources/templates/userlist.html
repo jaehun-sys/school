@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+</head>
+    <table>
+        <thead>
+            <tr>
+                <th> 아이디 </th>
+                <th> 사용자 이름 </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${userlist.empty}">
+            <td colspan="2"> No userlist Available </td>
+        </tr>
+        <tr th:each="user : ${userlist}">
+            <td><span th:text="${user.id}"> ID </span></td>
+            <td><span th:text="${user.name}"> Name </span></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

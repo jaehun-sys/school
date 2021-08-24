@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-
+//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mapper.UserMapper">
+
+    <select id="getUserList" resultType="com.example.vo.UserVO">
+        SELECT * from Users
+    </select>
+    
+    <select id="getUser" resultType="com.example.vo.UserVO">
+        select * from Users where id = #{id}
+    </select>
+    
+    <insert id="createUser">
+        insert into Users (name, id) values(#{name}, #{id})
+    </insert>
+    
+    <delete id="deleteUser">
+        delete from Users where id = #{id}
+    </delete>
+    
+    <update id="updateUser">
+        update Users set name = #{name} where id = #{id}
+    </update>
+
+</mapper>
