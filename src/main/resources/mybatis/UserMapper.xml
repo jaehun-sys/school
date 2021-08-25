@@ -24,4 +24,8 @@
         update Users set name = #{name} where id = #{id}
     </update>
 
+    <select id="loginUser"  resultType="com.example.vo.UserVO">
+        select * from Users where id = #{id} and password = #{password}
+    </select>
+
 </mapper>

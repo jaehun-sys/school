@@ -59,4 +59,19 @@ public class UserController {
         
         return "userInfo";
     }
+
+    //login연습
+    @RequestMapping(value = "/login")
+    public String loginUser(@ModelAttribute UserVO user, Model model) throws Exception {
+        
+        System.out.println("입력받은 id = " + user.getId());
+        System.out.println("입력받은 pw = " + user.getPassword());
+
+        UserVO result = userService.loginUser(user);
+        
+        model.addAttribute("id", result.getId());
+        model.addAttribute("password", result.getPassword() );
+        
+        return "userInfo";
+    }
 }

@@ -17,4 +17,8 @@ public class UserService {
     public UserVO getUser(UserVO user) {
         return mapper.getUser(user);
     }
+
+    public UserVO loginUser(UserVO user){
+        return mapper.loginUser(user);
+    }
 }
