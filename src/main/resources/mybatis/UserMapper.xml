@@ -24,9 +24,15 @@
         update Users set name = #{name} where id = #{id}
     </update>
 
+<<<<<<< HEAD
     <!--로그인-->
     <login id="loginUser">
         select * from Users where id = #{id} and password = #{password}
     </login>
+=======
+    <select id="loginUser"  resultType="com.example.vo.UserVO">
+        select * from Users where id = #{id} and password = #{password}
+    </select>
+>>>>>>> ee9e687c22d2c8313f0944b8398148aab167d830
 
 </mapper>

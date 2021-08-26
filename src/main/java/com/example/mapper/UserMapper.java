@@ -14,4 +14,6 @@ public interface UserMapper {
     int createUser(UserVO user);
     int updateUser(UserVO user);
     int deleteUser(UserVO user);
+    
+    UserVO loginUser(UserVO user);//로그인
 }
