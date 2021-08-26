@@ -24,4 +24,9 @@
         update Users set name = #{name} where id = #{id}
     </update>
 
+    <!--로그인-->
+    <login id="loginUser">
+        select * from Users where id = #{id} and password = #{password}
+    </login>
+
 </mapper>
