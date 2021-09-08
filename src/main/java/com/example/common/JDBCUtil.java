@@ -7,9 +7,9 @@ public class JDBCUtil {
         try {
             Class.forName("org.mariadb.jdbc.Driver");
             return DriverManager.getConnection(
-            "jdbc:mariadb://127.0.0.1:3306/testdb",
-            "root", // userid 
-            "root12"); //userpassword
+            "jdbc:mariadb://ec2-54-180-157-48.ap-northeast-2.compute.amazonaws.com/INFDB_AWS",
+            "INFLUENCER", // userid 
+            "INSTAGRAM12#$"); //userpassword
         } catch (Exception e) { e.printStackTrace(); }
         return null;
     }
