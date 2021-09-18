@@ -2,14 +2,14 @@ package com.example.vo;
 
 public class inf_fol_rateVO{
     private long inf_pk;
-    private float rate_sex_f;
-    private float rate_sex_m;
-    private float rate_susp;
-    private float rate_real;
-    private float rate_mass;
-    private float rate_inf;
-    private float real_fol_count;
-    private float real_fol_rate;
+    private String rate_sex_f;
+    private String rate_sex_m;
+    private String rate_susp;
+    private String rate_real;
+    private String rate_mass;
+    private String rate_inf;
+    private String real_fol_count;
+    private String real_fol_rate;
 
     public String toString() {
         return "inf_fol_rateVO [inf_pk=" + inf_pk + ", rate_sex_f=" + rate_sex_f + ", rate_sex_m=" + rate_sex_m +
@@ -19,7 +19,7 @@ public class inf_fol_rateVO{
     public long getInfPk(){
         return inf_pk;
     }
-    public float getRateSexF(){
+    public String getRateSexF(){
         return rate_sex_f;
     }
     public String getRateSexM(){
@@ -44,31 +44,31 @@ public class inf_fol_rateVO{
         return real_fol_rate;
     }
 
-    public void getInfPk(long inf_pk){
+    public void setInfPk(long inf_pk){
         this.inf_pk = inf_pk;
     }
-    public void getRateSexF(float rate_sex_f ){
+    public void setRateSexF(String rate_sex_f ){
         this.rate_sex_f = rate_sex_f;
     }
-    public void getRateSexM(float rate_sex_m){
+    public void setRateSexM(String rate_sex_m){
         this.rate_sex_m = rate_sex_m;
     }
-    public void getRateSusp(float rate_susp){
+    public void setRateSusp(String rate_susp){
         this.rate_susp = rate_susp;
     }
-    public void getRateReal(float rorate_realle){
+    public void setRateReal(String rate_real){
         this.rate_real = rate_real;
     }
-    public void getRateMass(float rate_mass){
+    public void setRateMass(String rate_mass){
         this.rate_mass = rate_mass;
     }
-    public void getRateInf(float rate_inf){
+    public void setRateInf(String rate_inf){
         this.rate_inf = rate_inf;
     }
-    public void getRealFolCount(float real_fol_count){
+    public void setRealFolCount(String real_fol_count){
         this.real_fol_count = real_fol_count;
     }
-    public void getRealFolRate(float real_fol_rate){
+    public void setRealFolRate(String real_fol_rate){
         this.real_fol_rate = real_fol_rate;
     }
 
