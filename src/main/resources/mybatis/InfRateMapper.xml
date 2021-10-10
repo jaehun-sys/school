@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-
+//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mapper.InfRateMapper">
+
+    <select id="getInfFolRateList" resultType="com.example.vo.inf_fol_rateVO">
+        SELECT * from INF_FOL_RATE
+    </select>
+    
+    <!-- <select id="getUser" resultType="com.example.vo.UserVO">
+        select * from INF_FOL_RATE where id = #{id}
+    </select>
+    
+    <insert id="createUser">
+        insert into INF_FOL_RATE (name, id) values(#{name}, #{id})
+    </insert>
+    
+    <delete id="deleteUser">
+        delete from INF_FOL_RATE where id = #{id}
+    </delete>
+    
+    <update id="updateUser">
+        update INF_FOL_RATE set name = #{name} where id = #{id}
+    </update>
+
+    <!--로그인-->
+    <login id="loginUser">
+        select * from INF_FOL_RATE where id = #{id} and password = #{password}
+    </login> -->
+
+</mapper>
